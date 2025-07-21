@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-2"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:04:33 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtSk5SRFFOM1A7MjAyNS0wNy0yMTsxMTo1MDoxOSBBTTsyNjgy"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtSk5SRFFOM1A7MjAyNS0wNy0yMTsxMjowNDozMyBQTTsxOzI4MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="totalPayment" type="Real" array="False" size=""/>
+            <assign variable="totalPayment" expression="n * (250 + (0.15*250))"/>
+            <output expression="totalPayment" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
