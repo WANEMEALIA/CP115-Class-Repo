@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-5"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:33:17 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtSk5SRFFOM1A7MjAyNS0wNy0yMTsxMjoyNzozNyBQTTsyNzAy"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtSk5SRFFOM1A7MjAyNS0wNy0yMTsxMjozMzoxNyBQTTsxOzI4MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="serving" type="Real" array="False" size=""/>
+            <declare name="caloPerServ" type="Real" array="False" size=""/>
+            <input variable="serving"/>
+            <input variable="caloPerServ"/>
+            <declare name="totalCalo" type="Real" array="False" size=""/>
+            <assign variable="totalCalo" expression="serving * caloPerServ"/>
+            <output expression="totalCalo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

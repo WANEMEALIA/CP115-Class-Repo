@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-4"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:27:11 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtSk5SRFFOM1A7MjAyNS0wNy0yMTsxMjoyMzo0NyBQTTsyNjk5"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtSk5SRFFOM1A7MjAyNS0wNy0yMTsxMjoyNzoxMSBQTTsyOzI4MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="page" type="Real" array="False" size=""/>
+            <input variable="page"/>
+            <declare name="totalCost" type="Real" array="False" size=""/>
+            <assign variable="totalCost" expression="(page * 0.20) + 3"/>
+            <output expression="totalCost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
