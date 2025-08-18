@@ -1,7 +1,7 @@
 import random
 
-restaurant = "Soto Bowl"
-location = "Garden City"
+restaurant = "Soto Bawl"
+location = "Garde City"
 menu = "Wantan Mee Prawnball\nSoto Ayam\nLemon Mint"
 
 restaurant_upper = restaurant.upper()

@@ -1,4 +1,4 @@
-import school_data
+import labs.lab07.exercise2.exercise3.school_data as school_data
 
 print(f"Student: {school_data.student_name}")
 print(f"Student ID: {school_data.student_id}")

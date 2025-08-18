@@ -1,4 +1,4 @@
-import menu_data
+import labs.lab07.exercise2.exercise3.exercise4.menu_data as menu_data
 
 print(f"WELCOME to {menu_data.restaurant}")
 print(f"Customer number {menu_data.customer_number}")
