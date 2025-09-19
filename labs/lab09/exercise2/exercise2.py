@@ -6,27 +6,30 @@ overtime_hours = int(input("Enter your overtime hours: "))
 tax_status = input("Enter your status: ")
 
 total_income = base_salary + (overtime_hours * 35)
-epf = 0.11 * total_income
-socso = 0.005 * total_income
-
-taxable_income = total_income - epf - socso
+epf = 0.11 
+socso = 0.005
 
 # TODO your code here
-if (tax_status == "Single") and (taxable_income >= 5000) :
-    tax_rate = 0.22
+if (tax_status == "Single") and (total_income >= 5000) :
+    tax_rate = "22%"
+    tax = 0.22
 else :
-    tax_rate = 0.18
-if (tax_status == "Married") and (taxable_income >= 6000) :
-    tax_rate = 0.2
+    tax_rate = "18%"
+    tax = 0.18
+if (tax_status == "Married") and (total_income >= 6000) :
+    tax_rate = "20%"
+    tax = 0.2
 else :
-    tax_rate = 0.15
-if (tax_status == "Head") and (taxable_income >= 5500) :
-    tax_rate = 0.25
+    tax_rate = "15%"
+    tax = 0.15
+if (tax_status == "Head") and (total_income >= 5500) :
+    tax_rate = "25%"
+    tax = 0.25
 else :
-    tax_rate = 0.19
+    tax_rate = "19%"
+    tax = 0.19
 
-tax = taxable_income * tax_rate
-net_salary = taxable_income - tax
+net_salary = total_income - ((tax*total_income)+(epf*total_income)+(socso*total_income))
 
 #Output
 print(employee_name)
