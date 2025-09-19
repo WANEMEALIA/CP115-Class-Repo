@@ -3,7 +3,7 @@
 employee_name = input("Enter your name: ")
 base_salary = float(input("Enter your base salary: "))
 ot_hours = int(input("Enter your overtime hours: "))
-tax_status = input("Enter your status: ")
+tax_status = input("Enter your status (Single/Married/Head): ")
 
 #constant
 ot = 35
