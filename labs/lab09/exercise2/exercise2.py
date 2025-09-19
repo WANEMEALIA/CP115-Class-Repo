@@ -1,52 +1,45 @@
 #Tax calculator 
 #Input
-employee_name = input("Enter your name: ")
-base_salary = float(input("Enter your base salary: "))
-ot_hours = int(input("Enter your overtime hours: "))
-tax_status = input("Enter your status (Single/Married/Head): ")
+employee_name = input()
+base_salary = float(input())
+ot_hours = int(input())
+tax_status = input()
 
 #constant
-ot = 35
-epf = 0.11 
-socso = 0.005
-
-#Calculate ot pay
-ot_pay = ot_hours * ot
+ot_pay = ot_hours * 35
 
 #Total income bfore deducted
 total_income = base_salary + ot_pay
 
 #TODO your code here
-if (tax_status.lower() == "Single") :
-    if (total_income >= 5000) :
-        tax_rate = "22%"
-        tax = 0.22
+if tax_status == "Single" :
+    if total_income >= 5000 :
+        tax_charged = 0.22
+        tax_rate_str = "22%"
     else :
-        tax_rate = "18%"
-        tax = 0.18
-elif (tax_status.lower() == "Married") :
-    if (total_income >= 6000) :
-        tax_rate = "20%"
-        tax = 0.2
+        tax_charged = 0.18
+        tax_rate_str = "18%"
+elif tax_status == "Married" :
+    if total_income >= 6000 :
+        tax_charged = 0.2
+        tax_rate_str = "20%"
     else :
-        tax_rate = "15%"
-        tax = 0.15
-elif (tax_status.lower() == "Head") :
-    if (total_income >= 5500) :
-        tax_rate = "25%"
-        tax = 0.25
+        tax_charged = 0.15
+        tax_rate_str = "15%"
+elif tax_status == "Head" :
+    if total_income >= 5500 :
+        tax_charged = 0.25
+        tax_rate_str = "25%"
     else :
-        tax_rate = "19%"
-        tax = 0.19
+        tax_charged = 0.19
+        tax_rate_str = "19%"
+else : 
+    tax_charged = 0.0
+    tax_rate_str = "0%"
 
-after_tax = total_income * (1-tax)
-
-epf_deduction = total_income*epf
-socso_deduction = total_income*socso
-
-net_salary = after_tax - epf_deduction - socso_deduction
+net_salary = total_income * (1 - tax_charged) * (1 - 0.11) * (1 - 0.005)
 
 #Output
 print(employee_name)
-print(tax_rate)
-print(f"RM {net_salary:.2f}")
+print(tax_rate_str)
+print(f"{net_salary:.2f}")
