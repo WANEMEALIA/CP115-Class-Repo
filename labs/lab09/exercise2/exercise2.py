@@ -17,21 +17,21 @@ ot_pay = ot_hours * ot
 total_income = base_salary + ot_pay
 
 #TODO your code here
-if (tax_status == "Single") :
+if (tax_status.lower() == "Single") :
     if (total_income >= 5000) :
         tax_rate = "22%"
         tax = 0.22
     else :
         tax_rate = "18%"
         tax = 0.18
-elif (tax_status == "Married") :
+elif (tax_status.lower() == "Married") :
     if (total_income >= 6000) :
         tax_rate = "20%"
         tax = 0.2
     else :
         tax_rate = "15%"
         tax = 0.15
-elif (tax_status == "Head") :
+elif (tax_status.lower() == "Head") :
     if (total_income >= 5500) :
         tax_rate = "25%"
         tax = 0.25
