@@ -1,5 +1,5 @@
 # Multiple counters working together
-day = 1
+"""day = 1
 total_sales = 0
 successful_days = 0
 
@@ -16,4 +16,24 @@ while day <= 7:  # One week
 
     day += 1
 
-print(f"Week summary: RM{total_sales} total, {successful_days} successful days")
+print(f"Week summary: RM{total_sales} total, {successful_days} successful days")"""
+
+# Problem: Teacher must count students first!
+"""num_students = int(input("How many students? "))
+total = 0
+
+for i in range(num_students):
+    grade = float(input("Enter grade: "))
+    total += grade
+
+average = total / num_students
+print(f"Average: {average}")"""
+
+# Complete sentinel pattern - all three parts labeled
+grade = float(input("Enter grade (-1 to stop): "))  # Part 1: Prime input
+
+while grade != -1:  # Part 2: Condition
+    print(f"You entered: {grade}")
+    grade = float(input("Enter grade (-1 to stop): "))  # Part 3: Update input
+
+print("Done entering grades!")

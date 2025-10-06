@@ -1,4 +1,4 @@
-num_rounds = int(input())
+num_rounds = int(input("Enter price (-1 to stop")))
 
 final_score = 0
 rounds_processed = 0
