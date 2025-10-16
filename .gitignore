@@ -25,6 +25,7 @@ venv/
 ENV/
 env/
 venv.bak/
+cp115_env/
 
 # Unit test / coverage reports
 htmlcov/
@@ -47,7 +48,7 @@ coverage.xml
 .python-version
 
 # VS Code
-.vscode/
+#.vscode/
 
 # dotenv
 .env
@@ -59,3 +60,7 @@ coverage.xml
 # Windows
 Thumbs.db
 Desktop.ini
+
+# Claude Code files
+CLAUDE.md
+.claude*
