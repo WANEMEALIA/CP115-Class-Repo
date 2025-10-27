@@ -20,6 +20,6 @@ else:
     approval_status = "Rejected"
     interest_rate = 0.0  # No interest for rejected loans
 
-print(interest_rate)
+printinterest_rate)
 print(max_loan_amount)
 print(approval_status)

@@ -1,9 +1,32 @@
-day_type = input()
-show_time = int(input())
-customer_type = input()
-is_student = input()
+day_type = input("Enter day: ")
+show_time = int(input("Enter time: "))
+customer_type = input("Enter customer type: ")
+is_student = input("Are you a student ? : ")
 
-# Determine base price using separate if statements (no nesting)
+price = 0
+#your code here
+if day_type == "Weekend":
+    if customer_type == "Adult":
+        price = 18
+    elif customer_type == "Child":
+        price = 12
+    elif customer_type == "Senior":
+        price = 15
+    else:
+        price = 0
+elif day_type == "Weekday":
+    if customer_type == "Adult":
+        price = 15
+    elif customer_type == "Child":
+        price = 10
+    elif customer_type == "Senior":
+        price = 12
+    else:
+        price = 0
+else:
+    price = 0
+
+"""# Determine base price using separate if statements (no nesting)
 base_price = 0
 
 # Weekend Adult pricing
@@ -28,18 +51,17 @@ if day_type == "Weekday" and customer_type == "Child":
 
 # Weekday Senior pricing
 if day_type == "Weekday" and customer_type == "Senior":
-    base_price = 12
+    base_price = 12"""
 
-# Start with base price as final price
-final_price = base_price
 
 # Apply evening surcharge (after 6pm = show_time > 18)
-if show_time > 18:
-    final_price = final_price + 3
+if show_time >= 18:
+    price += 3
 
 # Apply student discount (10% off final price, weekdays only)
 if day_type == "Weekday" and is_student == "Yes":
-    final_price = final_price * 0.9
+    price *= 0.9
 
-print(base_price)
-print(final_price)
+
+print(price)
+print(price)

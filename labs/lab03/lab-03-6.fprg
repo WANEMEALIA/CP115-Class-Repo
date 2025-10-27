@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-6"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:48:26 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtSk5SRFFOM1A7MjAyNS0wNy0yMTsxMjozMzo0MCBQTTsyNjkz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtSk5SRFFOM1A7MjAyNS0wNy0yMTsxMjo0ODoyNiBQTTsxOzI4MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="houseA" type="Real" array="False" size=""/>
+            <declare name="biA" type="Real" array="False" size=""/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="lengthBI" type="Real" array="False" size=""/>
+            <declare name="widthBI" type="Real" array="False" size=""/>
+            <declare name="mowA" type="Real" array="False" size=""/>
+            <input variable="width"/>
+            <input variable="length"/>
+            <input variable="lengthBI"/>
+            <input variable="widthBI"/>
+            <declare name="totalWage" type="Real" array="False" size=""/>
+            <assign variable="houseA" expression="length*width"/>
+            <assign variable="biA" expression="widthBI * lengthBI"/>
+            <assign variable="mowA" expression="biA - houseA"/>
+            <assign variable="totalWage" expression="mowA * 2"/>
+            <output expression="totalWage" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
