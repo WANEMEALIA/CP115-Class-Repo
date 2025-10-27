@@ -6,6 +6,7 @@ for number in range(100):
     print(f'Checking number: {number}')
     if number == target:
         found = True
+        found_number = target
         print(f'Found {target}!')
         break  # Exit loop immediately
     print(f'Still inside loop, checking next...')  # This runs before break
